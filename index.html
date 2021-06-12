@@ -21,7 +21,46 @@
         <div class = "col-6 right-col">
             <img class = "close-btn" src = "images/icons/close.svg">
             <div class = "right-col__content">
-                <h1 class = "right-col__title">Изменить номер</h1>
+                <h1 class = "right-col__title">Авторизация</h1>
+                <p class = "right-col__subtitle">Укажите Ваш E-mail который привязан к учетной записи, на него будет отправлен новый временный пароль.</p>
+                <form action = "">
+                    <div class = "label-wrapper">
+                        <span><img src = "images/Profile.svg"></span>
+                        <input required type="password" class="form-input form-input-necessarily" placeholder="Логин">
+                    </div>
+                    <div class = "label-wrapper">
+                        <span><img src="images/Lock.svg"></span>
+                        <input required type="text" class="form-input form-input-necessarily" placeholder="Пароль">
+                    </div>
+                    <div class = "d-flex justify-content-between set">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Запомнить меня
+                        </label>
+                        <a href="#" class = "link">Забыли пароль?</a>
+                    </div>
+                    <input type="submit" class="form-btn" value="Изменить">
+                </form> 
+                <section class = "alternative-block">
+                    <span class = "alternative-block__text">или</span>
+                    <div class = "networks">
+                        <a href="#" class = "networks__item"><img src = "images/Group.svg"></a>
+                        <a href="#" class = "networks__item"><img src = "images/facebook.svg"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class = "row wrapper">
+        <div class = "col-6 left-col">
+            <div class = "registration-block">
+                <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
+            </div>
+        </div>
+        <div class = "col-6 right-col">
+            <img class = "close-btn" src = "images/icons/close.svg">
+            <div class = "right-col__content">
+                <h1 class = "right-col__title">Восстановить пароль</h1>
                 <p class = "right-col__subtitle">Укажите Ваш E-mail который привязан к учетной записи, на него будет отправлен новый временный пароль.</p>
                 <form action = "">
                     <div class = "label-wrapper">
@@ -32,7 +71,7 @@
                 </form> 
                 <div class="support-block">
                     <p class = "support-block__text">Возникли проблемы?</p>
-                    <a class = "support-block__link">Обратитесь к нам в службу поддержки</a>
+                    <a class = "support-link">Обратитесь к нам в службу поддержки</a>
                 </div>
             </div>
         </div>
@@ -53,13 +92,48 @@
                 </p>
                 <form action = "">
                     <div class = "label-wrapper">
-                        <input type="text" class="form-input" placeholder="Введите код">
+                        <span><img src="images/icons/lock.svg"></span>
+                        <input type="text" class="form-input" placeholder="Код с СМС">
                     </div>
                     <input type="submit" class="form-btn" value="Изменить">
                 </form> 
                 <div class="support-block">
                     <p class = "support-block__text">Возникли проблемы?</p>
-                    <a class = "support-block__link">Обратитесь к нам в службу поддержки</a>
+                    <a class = "support-link">Обратитесь к нам в службу поддержки</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "row wrapper">
+        <div class = "col-6 left-col">
+            <div class = "registration-block">
+                <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
+            </div>
+        </div>
+        <div class = "col-6 right-col">
+            <img class = "close-btn" src = "images/icons/close.svg">
+            <div class = "right-col__content">
+                <h1 class = "right-col__title">Изменить номер</h1>
+                <p class = "right-col__subtitle">
+                    Укажите ваш новий номер телефона, на него прийдет СМС с кодом подтверждения.
+                </p>
+                <form action = "">
+                    <div class = "label-wrapper">
+                        <div class="input_group">
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>+380</option>
+                              <option value="">+380</option>
+                              <option value="">+380</option>
+                              <option value="">+380</option>
+                            </select>
+                          </div>
+                        <input type="text" class="form-input" placeholder="000000000">
+                    </div>
+                    <input type="submit" class="form-btn" value="Изменить">
+                </form> 
+                <div class="support-block">
+                    <p class = "support-block__text">Возникли проблемы?</p>
+                    <a class = "support-link">Обратитесь к нам в службу поддержки</a>
                 </div>
             </div>
         </div>
