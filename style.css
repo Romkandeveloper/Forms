@@ -1,0 +1,137 @@
+body{
+    background: #E5E5E5;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.wrapper{
+    min-height: 495px;
+    max-width: 1030px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin: 50px auto;
+}
+
+.left-col{
+    position: relative;
+    background-image: url(images/registration-img.png);
+    background-size: cover;
+}
+.left-col::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #355DFF;
+    opacity: 0.4;
+}
+
+.left-col img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #355DFF;
+    opacity: 0;
+    z-index: 10;
+}
+.registration-block{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.right-col{
+    padding: 50px;
+    background-color:#FFFFFF;
+    position: relative;
+}
+.right-col__content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.right-col form{
+    flex-grow: 1;
+}
+.right-col__title{
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+.right-col__subtitle{
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 33px;
+}
+.text{
+    color: #fff;
+    margin-right: 5px;
+}
+.label-wrapper{
+    display: flex;
+    margin-bottom: 35px;
+    border: 2px solid #F1F1F1;
+    border-radius: 8px;
+}
+.label-wrapper span{
+    padding: 12px;
+    border-right: 2px solid #f1f1f1;
+}
+.form-input{
+    flex-grow: 1;
+    padding: 12px 0;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+}
+.form-input:focus{
+    outline: 2px solid #355DFF;
+}
+.form-btn{
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    font-family: inherit;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    background: #355DFF;
+    border-radius: 6px; 
+    margin-bottom: 53px;
+    transition: 0.5s ease;
+}
+.form-btn:hover{
+    background-color: #0134ff;
+}
+.support-block{
+    text-align: center;
+    line-height: 19px;
+}
+.support-block__text{
+    margin: 0;
+}
+.support-block__link{
+    color: blue !important;
+    cursor: pointer;
+    text-decoration: underline !important;
+}
+.close-btn{
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
