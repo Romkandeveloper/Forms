@@ -18,23 +18,23 @@ a{
     margin: 50px auto;
 }
 
-.left-col{
+.background-block{
     position: relative;
-    background-image: url(images/registration-img.png);
+    background-image: url(images/slider-img.png);
     background-size: cover;
 }
-.left-col::after{
+.background-block::after{
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #355DFF;
+    background: #229FFF;
     opacity: 0.4;
 }
 
-.left-col img::after{
+/*.left-col img::after{
     content: "";
     position: absolute;
     top: 0;
@@ -44,7 +44,7 @@ a{
     background-color: #355DFF;
     opacity: 0;
     z-index: 10;
-}
+}*/
 .registration-block{
     position: absolute;
     bottom: 50px;
@@ -66,15 +66,19 @@ a{
     flex-grow: 1;
 }
 .right-col__title{
+    margin-bottom: 0;
     font-weight: 800;
     font-size: 36px;
     line-height: 48px;
-    margin-bottom: 20px;
 }
 .right-col__subtitle{
     font-weight: 600;
     line-height: 19px;
     margin-bottom: 33px;
+}
+.right-col__subtitle_registration{
+    font-size: 16px;
+    color:#757575;
 }
 .text{
     color: #fff;
@@ -85,6 +89,7 @@ a{
     margin-bottom: 20px;
     border: 2px solid #F1F1F1;
     border-radius: 8px;
+    overflow: hidden;
 }
 .label-wrapper span{
     padding: 12px;
@@ -92,15 +97,13 @@ a{
 }
 .form-input{
     flex-grow: 1;
-    padding: 12px 0;
-    padding-left: 30px;
+    padding: 12px 30px !important;
+    font-weight: 600;
     outline: none;
     border: none;
+    color:#757575;
 }
 
-.form-input:focus{
-    outline: 2px solid #355DFF;
-}
 .form-btn{
     cursor: pointer;
     padding: 12px;
@@ -137,16 +140,14 @@ a{
     right: 15px;
 }
 .form-select{
+    width: 100%;
     outline: none;
     height: 100%;
     border: none;
-    padding-left: 20px;
-    padding-right: 10px;
-}
-.set{
-    margin-bottom: 25px;
-    padding-left: 1.3rem;
-}
+    padding: 0 25px;
+    -webkit-appearance: none;
+    background: url(images/arrow.svg) no-repeat 90%;
+} 
 .link{
     color: #355DFF !important;
     font-weight: bold;
@@ -203,3 +204,46 @@ a{
 .networks__item:nth-child(2):hover{
     background-color: #2b447a;
 }
+.title-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.step{
+    position: relative;
+    top: 7px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7C8087;
+    margin-left: 14px;
+}
+.checkbox-wrapper{
+    margin-bottom: 20px;
+    padding-left: 1.3rem;
+}
+.input-title{
+    color: #242731;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+.invite{
+    color: #355DFF;
+}
+.mg-o{
+    margin-bottom: 0;
+}
+.labels-wrapper{
+    display: flex;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.labels-wrapper > .label-wrapper{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.label-wrapper:nth-child(2){
+    flex-basis: 60%;
+}
+
