@@ -16,7 +16,44 @@
     <div class = "main-wrapper">
         <div class = "supheader">
             <div class = "main-container">
-
+                <div class = "supheader__wrapper">
+                    <ul class = "networks-list">
+                        <li class = "networks-list__item">
+                            <a href = "#"><img src = "images/tg.svg"></a>
+                        </li>
+                        <li class = "networks-list__item">
+                            <a href = "#"><img src = "images/tg.svg"></a>
+                        </li>
+                        <li class = "networks-list__item">
+                            <a href = "#"><img src = "images/tg.svg"></a>
+                        </li>
+                        <li class = "networks-list__item">
+                            <a href = "#">мы в соцветях</a>
+                        </li>
+                    </ul>
+                    <ul class = "networks-list">
+                        <li class = "networks-list__item">
+                            <a href = "#"><img src = "images/Stroke.svg"></a>
+                        </li>
+                        <li class = "networks-list__item">
+                            <a href = "#">Благотворительность</a>
+                        </li>
+                    </ul>
+                    <div class = "flex">
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>ru</option>
+                            <option value="">+380</option>
+                            <option value="">+380</option>
+                            <option value="">+380</option>
+                          </select>
+                          <ul class = "networks-list">
+                            <li class = "networks-list__item">
+                                <a href = "#"><img src = "images/Stroke.svg"></a>
+                                <a href = "#">Мой кабинет</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <header class = "header">
@@ -168,15 +205,6 @@
         </main>  
     </div>
 
-
-
-
-
-
-
-
-
-
     <section class = "row wrapper">
         <div class = "col-6 left-col background-block">
             <div class = "registration-block">
@@ -193,13 +221,13 @@
                 <p class = "right-col__subtitle right-col__subtitle_registration">Контактная информация:</p>
                 <form action = "">
                     <div class = "label-wrapper">
-                        <input type="text" class="form-input" placeholder="Имя">
+                        <input required type="text" class="form-input" placeholder="Имя">
                     </div>
                     <div class = "label-wrapper">
-                        <input type="text" class="form-input" placeholder="Фамилия">
+                        <input required type="text" class="form-input" placeholder="Фамилия">
                     </div>
                     <div class = "label-wrapper">
-                        <input type="text" class="form-input" placeholder="Отчество">
+                        <input required type="text" class="form-input" placeholder="Отчество">
                     </div>
                     <div class = "labels-wrapper">
                         <div class = "label-wrapper">
@@ -279,8 +307,8 @@
                         </div>
                     </div>
                     <div class = "checkbox-wrapper">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheck">
-                        <label class="form-check-label" for="flexCheck">
+                        <input class="form-check-input" type="checkbox" value="" id="flexChecks">
+                        <label class="form-check-label" for="flexChecks">
                             Я подтверждаю что <span class = "invite-user">...</span> меня пригласил
                         </label>
                         <script>
@@ -295,8 +323,8 @@
                         </script>
                     </div>
                     <div class = "checkbox-wrapper">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaul">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                        <label class="form-check-label" for="flexCheck">
                             Я согласен с Политикой конфиденциальности, условиями использования и подтверждаю, что мне исполнилось 18+
                         </label>
                     </div>

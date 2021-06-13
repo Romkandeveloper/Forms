@@ -17,11 +17,13 @@ a{
     display: flex;
     margin: 50px auto;
 }
-
 .background-block{
     position: relative;
     background-image: url(images/slider-img.png);
     background-size: cover;
+}
+select{
+    cursor: pointer;
 }
 .background-block::after{
     content: "";
@@ -33,18 +35,6 @@ a{
     background: #229FFF;
     opacity: 0.4;
 }
-
-/*.left-col img::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #355DFF;
-    opacity: 0;
-    z-index: 10;
-}*/
 .registration-block{
     position: absolute;
     bottom: 50px;
@@ -85,23 +75,28 @@ a{
     margin-right: 5px;
 }
 .label-wrapper{
+    padding: 2px;
     display: flex;
     margin-bottom: 20px;
     border: 2px solid #F1F1F1;
     border-radius: 8px;
-    overflow: hidden;
+   
 }
 .label-wrapper span{
     padding: 12px;
     border-right: 2px solid #f1f1f1;
 }
 .form-input{
+    max-width: 100%;
     flex-grow: 1;
     padding: 12px 30px !important;
     font-weight: 600;
     outline: none;
     border: none;
     color:#757575;
+}
+.form-input:focus{
+    outline: 2px solid #355DFF;
 }
 
 .form-btn{
@@ -240,10 +235,12 @@ a{
     margin-left: -10px;
 }
 .labels-wrapper > .label-wrapper{
+    width: 27%;
     margin-right: 10px;
     margin-left: 10px;
 }
-.label-wrapper:nth-child(2){
-    flex-basis: 60%;
+.labels-wrapper .label-wrapper:nth-child(2){
+    flex-grow: 1;
 }
+
 
