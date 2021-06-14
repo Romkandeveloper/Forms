@@ -197,302 +197,357 @@
             </main>  
         </div>
 
-        <section class = "row wrapper">
-            <div class = "col-6 left-col background-block">
-                <div class = "registration-block">
-                    <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
+        <div class = "main-container">
+            <div>
+                <div class = "btn-wrapper btn-wrapper-test"> 
+                    <a href="#singUP" class = "button button_orange button-modal">Регистрация Шаг 1</a>
+                </div>
+                <div class = "btn-wrapper btn-wrapper-test"> 
+                    <a href="#singUP2" class = "button button_orange button-modal">Регистрация Шаг 2</a>
+                </div>
+                <div class = "btn-wrapper btn-wrapper-test"> 
+                    <a href="#logIn" class = "button button_orange button-modal">Авторизация</a>
+                </div>
+                <div class = "btn-wrapper btn-wrapper-test"> 
+                    <a href="#forgotPassword" class = "button button_orange button-modal">Восстановить пароль</a>
+                </div>
+                <div class = "btn-wrapper btn-wrapper-test"> 
+                    <a href="#confirm" class = "button button_orange button-modal">Подтверждение регистрации</a>
+                </div>
+                <div class = "btn-wrapper btn-wrapper-test"> 
+                    <a href="#changeNumber" class = "button button_orange button-modal">Изменить номер</a>
+                </div>
+                <div class = "btn-wrapper btn-wrapper-test"> 
+                    <a href="#twoLogIn" class = "button button_orange button-modal">Двухфакторная аунтификация</a>
                 </div>
             </div>
-            <div class = "col-6 right-col">
-                <img class = "close-btn" src = "images/icons/close.svg" alt="">
-                <div class = "right-col__content">
-                    <div class = "title-wrapper">
-                        <h1 class = "right-col__title">Регистрация</h1>
-                        <span class = "step">Шаг 2</span>
+        </div>
+        
+        <section class = "modal-window" id = "singUP">
+            <div class = "modal-window__body">
+                <section class = "row wrapper">
+                    <div class = "col-6 left-col background-block">
+                        <div class = "registration-block">
+                            <span class = "text">Нет аккаунта?</span><a class = "" href = "#">Зарегистрироваться</a>
+                        </div>
                     </div>
-                    <p class = "right-col__subtitle right-col__subtitle_registration">Контактная информация:</p>
-                    <form action = "#">
-                        <div class = "label-wrapper">
-                            <input required type="text" class="form-input" placeholder="Имя">
-                        </div>
-                        <div class = "label-wrapper">
-                            <input required type="text" class="form-input" placeholder="Фамилия">
-                        </div>
-                        <div class = "label-wrapper">
-                            <input required type="text" class="form-input" placeholder="Отчество">
-                        </div>
-                        <div class = "labels-wrapper">
-                            <div class = "label-wrapper">
-                                <input type="text" class="form-input" placeholder="Число">
+                    <div class = "col-6 right-col">
+                        <img class = "close-btn" src = "images/icons/close.svg" alt="">
+                        <div class = "right-col__content">
+                            <div class = "title-wrapper">
+                                <h1 class = "right-col__title">Регистрация</h1>
+                                <span class = "step">Шаг 1</span>
                             </div>
-                            <div class = "label-wrapper">
-                                <select class="form-select">
-                                    <option selected disabled hidden>Месяц</option>
-                                    <option>Украина</option>
-                                    <option>Украина</option>
-                                    <option>Украина</option>
-                                </select>
-                            </div>
-                            <div class = "label-wrapper">
-                                <input type="text" class="form-input" placeholder="Год">
-                            </div>
-                        </div>
-                        <div class = "label-wrapper">
-                            <select class="form-select form-input">
-                                <option selected disabled hidden>Страна</option>
-                                <option>Украина</option>
-                                <option>Украина</option>
-                                <option>Украина</option>
-                            </select>
-                        </div>
-                        <div class = "label-wrapper">
-                            <div class="input_group">
-                                <select class="form-select">
-                                <option selected>+380</option>
-                                <option value="">+380</option>
-                                <option value="">+380</option>
-                                <option value="">+380</option>
-                                </select>
-                            </div>
-                            <input type="text" class="form-input" placeholder="000000000">
-                        </div>
-                        <div class = "label-wrapper">
-                            <span><img src="images/telegram.svg" alt=""></span>
-                            <input type="text" class="form-input" placeholder="@Telegram">
-                        </div>
-                        <input type="submit" class="form-btn mg-o" value="Завершить Регистрацию">
-                    </form> 
-                </div>
-            </div>
-        </section>
-        <section class = "row wrapper">
-            <div class = "col-6 left-col background-block">
-                <div class = "registration-block">
-                    <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
-                </div>
-            </div>
-            <div class = "col-6 right-col">
-                <img class = "close-btn" src = "images/icons/close.svg" alt="">
-                <div class = "right-col__content">
-                    <div class = "title-wrapper">
-                        <h1 class = "right-col__title">Регистрация</h1>
-                        <span class = "step">Шаг 1</span>
-                    </div>
-                    <form action = "#">
-                        <div class = "label-wrapper">
-                            <span><img src="images/icons/message.svg" alt=""></span>
-                            <input type="text" class="form-input" placeholder="E-mail">
-                        </div>
-                        <div class = "label-wrapper">
-                            <span><img src = "images/Profile.svg" alt=""></span>
-                            <input required type="password" class="form-input form-input-necessarily" placeholder="Логин">
-                        </div>
-                        <div class = "label-wrapper">
-                            <span><img src="images/Lock.svg" alt=""></span>
-                            <input required type="text" class="form-input form-input-necessarily" placeholder="Пароль">
-                        </div>
-                        <div class = "input-wrapper">
-                            <h4 class = "input-title">Вас пригласил:</h4>
-                            <div class = "label-wrapper">
-                                <span><img src="images/users.svg" alt=""></span>
-                                <input type="text" class="form-input form-input-necessarily invite" id = "inputFriend" placeholder="Логин">
-                            </div>
-                        </div>
-                        <div class = "checkbox-wrapper">
-                            <input class="form-check-input" type="checkbox" value="" id="flexChecks">
-                            <label class="form-check-label" for="flexChecks">
-                                Я подтверждаю что <span class = "invite-user">...</span> меня пригласил
-                            </label>
-                            <script>
-                                // User-invite script
-                                const checkFriend = document.querySelector(".invite-user");
-                                const inputFriend = document.getElementById("inputFriend");
-                                inputFriend.addEventListener("input",function(){
-                                    if (inputFriend.value == ""){
-                                        checkFriend.innerHTML = "...";
-                                    }else checkFriend.innerHTML = inputFriend.value;
-                                });
-                            </script>
-                        </div>
-                        <div class = "checkbox-wrapper">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheck">
-                            <label class="form-check-label" for="flexCheck">
-                                Я согласен с Политикой конфиденциальности, условиями использования и подтверждаю, что мне исполнилось 18+
-                            </label>
-                        </div>
+                            <form action = "#">
+                                <div class = "label-wrapper">
+                                    <span><img src="images/icons/message.svg" alt=""></span>
+                                    <input type="text" class="form-input" placeholder="E-mail">
+                                </div>
+                                <div class = "label-wrapper">
+                                    <span><img src = "images/Profile.svg" alt=""></span>
+                                    <input required type="password" class="form-input form-input-necessarily" placeholder="Логин">
+                                </div>
+                                <div class = "label-wrapper">
+                                    <span><img src="images/Lock.svg" alt=""></span>
+                                    <input required type="text" class="form-input form-input-necessarily" placeholder="Пароль">
+                                </div>
+                                <div class = "input-wrapper">
+                                    <h4 class = "input-title">Вас пригласил:</h4>
+                                    <div class = "label-wrapper">
+                                        <span><img src="images/users.svg" alt=""></span>
+                                        <input type="text" class="form-input form-input-necessarily invite" id = "inputFriend" placeholder="Логин">
+                                    </div>
+                                </div>
+                                <div class = "checkbox-wrapper">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexChecks">
+                                    <label class="form-check-label" for="flexChecks">
+                                        Я подтверждаю что <span class = "invite-user">...</span> меня пригласил
+                                    </label>
+                                    <script>
+                                        // User-invite script
+                                        const checkFriend = document.querySelector(".invite-user");
+                                        const inputFriend = document.getElementById("inputFriend");
+                                        inputFriend.addEventListener("input",function(){
+                                            if (inputFriend.value == ""){
+                                                checkFriend.innerHTML = "...";
+                                            }else checkFriend.innerHTML = inputFriend.value;
+                                        });
+                                    </script>
+                                </div>
+                                <div class = "checkbox-wrapper">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck">
+                                    <label class="form-check-label" for="flexCheck">
+                                        Я согласен с Политикой конфиденциальности, условиями использования и подтверждаю, что мне исполнилось 18+
+                                    </label>
+                                </div>
 
-                        <input type="submit" class="form-btn" value="Зарегестрироваться">
-                    </form> 
-                    <div class = "alternative-block">
-                        <span class = "alternative-block__text">или</span>
-                        <div class = "networks">
-                            <a href="#" class = "networks__item"><img src = "images/Group.svg" alt=""></a>
-                            <a href="#" class = "networks__item"><img src = "images/facebook.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class = "row wrapper">
-            <div class = "col-6 left-col background-block">
-                <div class = "registration-block">
-                    <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
-                </div>
-            </div>
-            <div class = "col-6 right-col">
-                <img class = "close-btn" src = "images/icons/close.svg" alt="">
-                <div class = "right-col__content">
-                    <div class = "title-wrapper">
-                        <h1 class = "right-col__title">Авторизация</h1>
-                    </div>
-                    <p class = "right-col__subtitle">Укажите Ваш E-mail который привязан к учетной записи, на него будет отправлен новый временный пароль.</p>
-                    <form action = "#">
-                        <div class = "label-wrapper">
-                            <span><img src = "images/Profile.svg" alt=""></span>
-                            <input required type="password" class="form-input form-input-necessarily" placeholder="Логин">
-                        </div>
-                        <div class = "label-wrapper">
-                            <span><img src="images/Lock.svg" alt=""></span>
-                            <input required type="text" class="form-input form-input-necessarily" placeholder="Пароль">
-                        </div>
-                        <div class = "d-flex justify-content-between checkbox-wrapper">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Запомнить меня
-                            </label>
-                            <a href="#" class = "link">Забыли пароль?</a>
-                        </div>
-                        <input type="submit" class="form-btn" value="Изменить">
-                    </form> 
-                    <div class = "alternative-block">
-                        <span class = "alternative-block__text">или</span>
-                        <div class = "networks">
-                            <a href="#" class = "networks__item"><img src = "images/Group.svg" alt=""></a>
-                            <a href="#" class = "networks__item"><img src = "images/facebook.svg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class = "row wrapper">
-            <div class = "col-6 left-col background-block">
-                <div class = "registration-block">
-                    <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
-                </div>
-            </div>
-            <div class = "col-6 right-col">
-                <img class = "close-btn" src = "images/icons/close.svg" alt="">
-                <div class = "right-col__content">
-                    <div class = "title-wrapper">
-                        <h1 class = "right-col__title">Восстановить пароль</h1>
-                    </div>
-                    <p class = "right-col__subtitle">Укажите Ваш E-mail который привязан к учетной записи, на него будет отправлен новый временный пароль.</p>
-                    <form action = "#">
-                        <div class = "label-wrapper">
-                            <span><img src="images/icons/message.svg" alt=""></span>
-                            <input type="text" class="form-input" placeholder="E-mail">
-                        </div>
-                        <input type="submit" class="form-btn" value="Изменить">
-                    </form> 
-                    <div class="support-block">
-                        <p class = "support-block__text">Возникли проблемы?</p>
-                        <a class = "support-link">Обратитесь к нам в службу поддержки</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class = "row wrapper">
-            <div class = "col-6 left-col background-block">
-                <div class = "registration-block">
-                    <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
-                </div>
-            </div>
-            <div class = "col-6 right-col">
-                <img class = "close-btn" src = "images/icons/close.svg" alt="">
-                <div class = "right-col__content">
-                    <div class = "title-wrapper">
-                        <h1 class = "right-col__title">Подтверждение аккаунта</h1>
-                    </div>
-                    <p class = "right-col__subtitle">
-                        На ваш номер телефона <b>UA +380 630000005</b> был отправлен код потдверждения аккаунта. 
-                        <a class = "support-link">Изменить номер</a>
-                    </p>
-                    <form action = "#">
-                        <div class = "label-wrapper">
-                            <span><img src="images/icons/lock.svg" alt=""></span>
-                            <input type="text" class="form-input" placeholder="Код с СМС">
-                        </div>
-                        <input type="submit" class="form-btn" value="Изменить">
-                    </form> 
-                    <div class="support-block">
-                        <p class = "support-block__text">Возникли проблемы?</p>
-                        <a class = "support-link">Обратитесь к нам в службу поддержки</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class = "row wrapper">
-            <div class = "col-6 left-col background-block">
-                <div class = "registration-block">
-                    <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
-                </div>
-            </div>
-            <div class = "col-6 right-col">
-                <img class = "close-btn" src = "images/icons/close.svg" alt="">
-                <div class = "right-col__content">
-                    <div class = "title-wrapper">
-                        <h1 class = "right-col__title">Изменить номер</h1>
-                    </div>
-                    <p class = "right-col__subtitle">
-                        Укажите ваш новий номер телефона, на него прийдет СМС с кодом подтверждения.
-                    </p>
-                    <form action = "#">
-                        <div class = "label-wrapper">
-                            <div class="input_group">
-                                <select class="form-select">
-                                <option selected>+380</option>
-                                <option value="">+380</option>
-                                <option value="">+380</option>
-                                <option value="">+380</option>
-                                </select>
+                                <input type="submit" class="form-btn" value="Зарегестрироваться">
+                            </form> 
+                            <div class = "alternative-block">
+                                <span class = "alternative-block__text">или</span>
+                                <div class = "networks">
+                                    <a href="#" class = "networks__item"><img src = "images/Group.svg" alt=""></a>
+                                    <a href="#" class = "networks__item"><img src = "images/facebook.svg" alt=""></a>
+                                </div>
                             </div>
-                            <input type="text" class="form-input" placeholder="000000000">
                         </div>
-                        <input type="submit" class="form-btn" value="Изменить">
-                    </form> 
-                    <div class="support-block">
-                        <p class = "support-block__text">Возникли проблемы?</p>
-                        <a class = "support-link">Обратитесь к нам в службу поддержки</a>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
-        <section class = "row wrapper">
-            <div class = "col-6 left-col background-block">
-                <div class = "registration-block">
-                    <span class = "text">Нет аккаунта?</span><a class = "link" href = "#">Зарегистрироваться</a>
-                </div>
-            </div>
-            <div class = "col-6 right-col">
-                <img class = "close-btn" src = "images/icons/close.svg" alt="">
-                <div class = "right-col__content">
-                    <div class = "title-wrapper">
-                        <h1 class = "right-col__title">Двухфакторная аунтификация</h1>
-                    </div>
-                    <p class = "right-col__subtitle">Создайте код в приложении Google Authenticator</p>
-                    <form action = "#">
-                        <div class = "label-wrapper">
-                            <input type="text" class="form-input" placeholder="Введите код">
+        <section class = "modal-window" id = "singUP2">
+            <div class = "modal-window__body">
+                <section class = "row wrapper">
+                    <div class = "col-6 left-col background-block">
+                        <div class = "registration-block">
+                            <span class = "text">Нет аккаунта?</span><a class = "" href = "#">Зарегистрироваться</a>
                         </div>
-                        <input type="submit" class="form-btn" value="Изменить">
-                    </form> 
-                    <div class="support-block">
-                        <p class = "support-block__text">Возникли проблемы?</p>
-                        <a class = "support-link">Обратитесь к нам в службу поддержки</a>
                     </div>
-                </div>
+                    <div class = "col-6 right-col">
+                        <img class = "close-btn" src = "images/icons/close.svg" alt="">
+                        <div class = "right-col__content">
+                            <div class = "title-wrapper">
+                                <h1 class = "right-col__title">Регистрация</h1>
+                                <span class = "step">Шаг 2</span>
+                            </div>
+                            <p class = "right-col__subtitle right-col__subtitle_registration">Контактная информация:</p>
+                            <form action = "#">
+                                <div class = "label-wrapper">
+                                    <input required type="text" class="form-input" placeholder="Имя">
+                                </div>
+                                <div class = "label-wrapper">
+                                    <input required type="text" class="form-input" placeholder="Фамилия">
+                                </div>
+                                <div class = "label-wrapper">
+                                    <input required type="text" class="form-input" placeholder="Отчество">
+                                </div>
+                                <div class = "labels-wrapper">
+                                    <div class = "label-wrapper">
+                                        <input type="text" class="form-input" placeholder="Число">
+                                    </div>
+                                    <div class = "label-wrapper">
+                                        <select class="form-select">
+                                            <option selected disabled hidden>Месяц</option>
+                                            <option>Украина</option>
+                                            <option>Украина</option>
+                                            <option>Украина</option>
+                                        </select>
+                                    </div>
+                                    <div class = "label-wrapper">
+                                        <input type="text" class="form-input" placeholder="Год">
+                                    </div>
+                                </div>
+                                <div class = "label-wrapper">
+                                    <select class="form-select form-input">
+                                        <option selected disabled hidden>Страна</option>
+                                        <option>Украина</option>
+                                        <option>Украина</option>
+                                        <option>Украина</option>
+                                    </select>
+                                </div>
+                                <div class = "label-wrapper">
+                                    <div class="input_group">
+                                        <select class="form-select">
+                                        <option selected>+380</option>
+                                        <option value="">+380</option>
+                                        <option value="">+380</option>
+                                        <option value="">+380</option>
+                                        </select>
+                                    </div>
+                                    <input type="text" class="form-input" placeholder="000000000">
+                                </div>
+                                <div class = "label-wrapper">
+                                    <span><img src="images/telegram.svg" alt=""></span>
+                                    <input type="text" class="form-input" placeholder="@Telegram">
+                                </div>
+                                <input type="submit" class="form-btn mg-o" value="Завершить Регистрацию">
+                            </form> 
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class = "modal-window" id = "logIn">
+            <div class = "modal-window__body">
+                <section class = "row wrapper">
+                    <div class = "col-6 left-col background-block">
+                        <div class = "registration-block">
+                            <span class = "text">Нет аккаунта?</span><a class = "link button-modal" href = "#singUP">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                    <div class = "col-6 right-col">
+                        <img class = "close-btn" src = "images/icons/close.svg" alt="">
+                        <div class = "right-col__content">
+                            <div class = "title-wrapper">
+                                <h1 class = "right-col__title">Авторизация</h1>
+                            </div>
+                            <p class = "right-col__subtitle">Укажите Ваш E-mail который привязан к учетной записи, на него будет отправлен новый временный пароль.</p>
+                            <form action = "#">
+                                <div class = "label-wrapper">
+                                    <span><img src = "images/Profile.svg" alt=""></span>
+                                    <input required type="password" class="form-input form-input-necessarily" placeholder="Логин">
+                                </div>
+                                <div class = "label-wrapper">
+                                    <span><img src="images/Lock.svg" alt=""></span>
+                                    <input required type="text" class="form-input form-input-necessarily" placeholder="Пароль">
+                                </div>
+                                <div class = "d-flex justify-content-between checkbox-wrapper">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Запомнить меня
+                                    </label>
+                                    <a href="#" class = "link">Забыли пароль?</a>
+                                </div>
+                                <input type="submit" class="form-btn" value="Изменить">
+                            </form> 
+                            <div class = "alternative-block">
+                                <span class = "alternative-block__text">или</span>
+                                <div class = "networks">
+                                    <a href="#" class = "networks__item"><img src = "images/Group.svg" alt=""></a>
+                                    <a href="#" class = "networks__item"><img src = "images/facebook.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class = "modal-window" id = "forgotPassword">
+            <div class = "modal-window__body">
+                <section class = "row wrapper">
+                    <div class = "col-6 left-col background-block">
+                        <div class = "registration-block">
+                            <span class = "text">Нет аккаунта?</span><a class = "link button-modal" href = "#singUP">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                    <div class = "col-6 right-col">
+                        <img class = "close-btn" src = "images/icons/close.svg" alt="">
+                        <div class = "right-col__content">
+                            <div class = "title-wrapper">
+                                <h1 class = "right-col__title">Восстановить пароль</h1>
+                            </div>
+                            <p class = "right-col__subtitle">Укажите Ваш E-mail который привязан к учетной записи, на него будет отправлен новый временный пароль.</p>
+                            <form action = "#">
+                                <div class = "label-wrapper">
+                                    <span><img src="images/icons/message.svg" alt=""></span>
+                                    <input type="text" class="form-input" placeholder="E-mail">
+                                </div>
+                                <input type="submit" class="form-btn" value="Изменить">
+                            </form> 
+                            <div class="support-block">
+                                <p class = "support-block__text">Возникли проблемы?</p>
+                                <a class = "support-link">Обратитесь к нам в службу поддержки</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class = "modal-window" id = "confirm">
+            <div class = "modal-window__body">
+                <section class = "row wrapper">
+                    <div class = "col-6 left-col background-block">
+                        <div class = "registration-block">
+                            <span class = "text">Нет аккаунта?</span><a class = "link button-modal" href = "#singUP">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                    <div class = "col-6 right-col">
+                        <img class = "close-btn" src = "images/icons/close.svg" alt="">
+                        <div class = "right-col__content">
+                            <div class = "title-wrapper">
+                                <h1 class = "right-col__title">Подтверждение аккаунта</h1>
+                            </div>
+                            <p class = "right-col__subtitle">
+                                На ваш номер телефона <b>UA +380 630000005</b> был отправлен код потдверждения аккаунта. 
+                                <a class = "support-link">Изменить номер</a>
+                            </p>
+                            <form action = "#">
+                                <div class = "label-wrapper">
+                                    <span><img src="images/icons/lock.svg" alt=""></span>
+                                    <input type="text" class="form-input" placeholder="Код с СМС">
+                                </div>
+                                <input type="submit" class="form-btn" value="Изменить">
+                            </form> 
+                            <div class="support-block">
+                                <p class = "support-block__text">Возникли проблемы?</p>
+                                <a class = "support-link">Обратитесь к нам в службу поддержки</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class = "modal-window" id = "changeNumber">
+            <div class = "modal-window__body">
+                <section class = "row wrapper">
+                    <div class = "col-6 left-col background-block">
+                        <div class = "registration-block">
+                            <span class = "text">Нет аккаунта?</span><a class = "link button-modal" href = "#singUP">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                    <div class = "col-6 right-col">
+                        <img class = "close-btn" src = "images/icons/close.svg" alt="">
+                        <div class = "right-col__content">
+                            <div class = "title-wrapper">
+                                <h1 class = "right-col__title">Изменить номер</h1>
+                            </div>
+                            <p class = "right-col__subtitle">
+                                Укажите ваш новий номер телефона, на него прийдет СМС с кодом подтверждения.
+                            </p>
+                            <form action = "#">
+                                <div class = "label-wrapper">
+                                    <div class="input_group">
+                                        <select class="form-select">
+                                        <option selected>+380</option>
+                                        <option value="">+380</option>
+                                        <option value="">+380</option>
+                                        <option value="">+380</option>
+                                        </select>
+                                    </div>
+                                    <input type="text" class="form-input" placeholder="000000000">
+                                </div>
+                                <input type="submit" class="form-btn" value="Изменить">
+                            </form> 
+                            <div class="support-block">
+                                <p class = "support-block__text">Возникли проблемы?</p>
+                                <a class = "support-link">Обратитесь к нам в службу поддержки</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class = "modal-window" id = "twoLogIn">
+            <div class = "modal-window__body">
+                <section class = "row wrapper">
+                    <div class = "col-6 left-col background-block">
+                        <div class = "registration-block">
+                            <span class = "text">Нет аккаунта?</span><a class = "link button-modal" href = "#singUP">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                    <div class = "col-6 right-col">
+                        <img class = "close-btn" src = "images/icons/close.svg" alt="">
+                        <div class = "right-col__content">
+                            <div class = "title-wrapper">
+                                <h1 class = "right-col__title">Двухфакторная аунтификация</h1>
+                            </div>
+                            <p class = "right-col__subtitle">Создайте код в приложении Google Authenticator</p>
+                            <form action = "#">
+                                <div class = "label-wrapper">
+                                    <input type="text" class="form-input" placeholder="Введите код">
+                                </div>
+                                <input type="submit" class="form-btn" value="Изменить">
+                            </form> 
+                            <div class="support-block">
+                                <p class = "support-block__text">Возникли проблемы?</p>
+                                <a class = "support-link">Обратитесь к нам в службу поддержки</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
         <script src = "select.js"></script>
+        <script src = "modalWindow.js"></script>
     </body>
 </html>

@@ -187,3 +187,12 @@ ul{
     width: 50px;
     margin-right: 200px;
 }
+.test{
+    overflow: visible !important;
+    max-width: 1030px;
+    margin: 0 auto;
+}
+.btn-wrapper-test{
+    margin-bottom: 10px;
+}
+
