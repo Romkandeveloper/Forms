@@ -8,6 +8,9 @@ a{
     text-decoration: none;
     display: inline-block;
 }
+select{
+    cursor: pointer;
+}
 .wrapper{
     min-height: 495px;
     max-width: 1030px;
@@ -21,9 +24,6 @@ a{
     position: relative;
     background-image: url(images/slider-img.png);
     background-size: cover;
-}
-select{
-    cursor: pointer;
 }
 .background-block::after{
     content: "";
@@ -42,6 +42,8 @@ select{
     transform: translateX(-50%);
     z-index: 100;
 }
+
+/* right-col */
 .right-col{
     padding: 50px;
     background-color:#FFFFFF;
@@ -70,10 +72,14 @@ select{
     font-size: 16px;
     color:#757575;
 }
+/* /right-col */
+
 .text{
     color: #fff;
     margin-right: 5px;
 }
+
+/* input */
 .label-wrapper{
     padding: 2px;
     display: flex;
@@ -98,7 +104,6 @@ select{
 .form-input:focus{
     outline: 2px solid #355DFF;
 }
-
 .form-btn{
     cursor: pointer;
     padding: 12px;
@@ -115,6 +120,8 @@ select{
 .form-btn:hover{
     background-color: #0134ff;
 }
+/* /input */
+
 .support-block{
     text-align: center;
     line-height: 19px;
@@ -150,6 +157,8 @@ select{
 .link:hover{
     text-decoration: none;
 }
+
+/* alternative-block */
 .alternative-block{
     margin-top: -43px;
     text-align: center;
@@ -173,6 +182,9 @@ select{
 .alternative-block__text::after{
     left: 50px;
 }
+/* /alternative-block */
+
+/* networks */
 .networks{
     margin-top: 10px;
     display: flex;
@@ -199,6 +211,8 @@ select{
 .networks__item:nth-child(2):hover{
     background-color: #2b447a;
 }
+/* /networks */
+
 .title-wrapper{
     display: flex;
     align-items: center;

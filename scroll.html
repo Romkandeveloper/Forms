@@ -1,125 +1,130 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
-    <style>
-    a{
-        text-decoration: none;
-    }
-    body{
-        margin: 0;
-    }
-    /*slider*/
-    .slick-track{
-        display: flex;
-    }
-    .slick-list{
-        overflow: hidden;
-    }
-    .slick-dots{
-        position: absolute;
-        bottom: 50px;
-        padding: 0;
-        left: 50%;
-        transform: translateX(-60%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .slick-dots li{
-        margin: 0 7.5px;
-        list-style: none;
-    }
-    .slick-dots button{
-        cursor: pointer;
-        border: none;
-        border-radius: 50%;
-        font-size: 0;
-        width: 11px;
-        height: 11px;
-        background: #F1F1F1;
-        outline: none;
-    }
-    .slick-active button{
-        width: 13px;
-        height: 13px;
-    }
-    /* /slider */
-    .slide-item{
-        color: #fff;
-        overflow: hidden;
-        border-radius: 8px;
-    }
-    .slide-item__content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 560px;
-        position: relative;
-        z-index: 100000;
-    }
-    .slide-item__title{
-        font-weight: 800;
-        font-size: 36px;
-        line-height: 116.29%;
-        margin-bottom: 25px;
-        color: #fff;
-    }
-    .slide-item__subtitle{
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 25px;
-    }
-    .slider{
-        position: relative;
-    }
-    /*buttons*/
-    .button{
-    padding: 10px 50px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    border: 2px solid;
-    display: inline-block;
-    transition: .1s ease-in;
-}
-    .btn-wrapper .button:hover{
-        color: inherit;
-        text-decoration: none;
-        transform: scale(1.05);
-    }
-    .button_orange{
-        border-color: #F79C00;
-        background: #F79C00;
-        color: #FFFFFF;
-    }
-    .button_blue{
-        color: #000;
-        background: #ECF3FF;
-        border-color: #ECF3FF;
-    }
-    .button_transparent{
-        border-color: #FFFFFF;
-        color: #FFFFFF;
-        background-color: transparent;
-    }
-    .btn-wrapper .button{
-        margin-right: 25px;
-    }
-    .btn-wrapper .button:last-child{
-        margin-right: 0;
-    }
-    .background-block{
-    position: relative;
-    background-image: url(images/slider-img.png);
-    background-size: cover;
-}
+<html lang="ru">
+    <head>
+        <title>scroll</title>
+        <meta charset="UTF-8">
+        <style>
+            a{
+                text-decoration: none;
+            }
+            body{
+                margin: 0;
+            }
+            /* slider */
+            .slick-track{
+                display: flex;
+            }
+            .slick-list{
+                overflow: hidden;
+            }
+            .slick-dots{
+                position: absolute;
+                bottom: 50px;
+                padding: 0;
+                left: 50%;
+                transform: translateX(-60%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .slick-dots li{
+                margin: 0 7.5px;
+                list-style: none;
+            }
+            .slick-dots button{
+                cursor: pointer;
+                border: none;
+                border-radius: 50%;
+                font-size: 0;
+                width: 11px;
+                height: 11px;
+                background: #F1F1F1;
+                outline: none;
+            }
+            .slick-active button{
+                width: 13px;
+                height: 13px;
+            }
+            /* /slider */
+            .slide-item{
+                color: #fff;
+                overflow: hidden;
+                border-radius: 8px;
+            }
+            .slide-item__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 560px;
+                position: relative;
+                z-index: 100000;
+            }
+            .slide-item__title{
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 116.29%;
+                margin-bottom: 25px;
+                color: #fff;
+            }
+            .slide-item__subtitle{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 25px;
+            }
+            .slider{
+                position: relative;
+            }
+
+            /* button */
+            .button{
+            padding: 10px 50px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            border: 2px solid;
+            display: inline-block;
+            transition: .1s ease-in;
+            }
+            .btn-wrapper .button:hover{
+                color: inherit;
+                text-decoration: none;
+                transform: scale(1.05);
+            }
+            .button_orange{
+                border-color: #F79C00;
+                background: #F79C00;
+                color: #FFFFFF;
+            }
+            .button_blue{
+                color: #000;
+                background: #ECF3FF;
+                border-color: #ECF3FF;
+            }
+            .button_transparent{
+                border-color: #FFFFFF;
+                color: #FFFFFF;
+                background-color: transparent;
+            }
+            .btn-wrapper .button{
+                margin-right: 25px;
+            }
+            .btn-wrapper .button:last-child{
+                margin-right: 0;
+            }
+            /* /button */
+
+            .background-block{
+            position: relative;
+            background-image: url(images/slider-img.png);
+            background-size: cover;
+        }
     </style>
-</html>
+</head>
 <body>
-    <section class = "slider">
+    <div class = "slider">
         <section class = "slide-item background-block">
             <div class = "slide-item__content">
                 <h1 class = "slide-item__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </h1>
@@ -150,9 +155,9 @@
                 </div>
             </div>
         </section>
-    </section>
+    </div>
      <!-- Slider -->
-     <script type="text/javascript" src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-     <script type="text/javascript" src="slider-settings.js"></script>
+     <script src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <script src="slider-settings.js"></script>
 </body>
