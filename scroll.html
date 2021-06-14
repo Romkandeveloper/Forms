@@ -126,10 +126,20 @@
             /* /button */
 
             .background-block{
-            position: relative;
-            background-image: url(images/slider-img.png);
-            background-size: cover;
-        }
+                position: relative;
+                background-image: url(images/slider-img.png);
+                background-size: cover;
+            }
+            .background-block::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: #229FFF;
+                opacity: 0.4;
+            }
     </style>
     <!-- Slider -->
     <script defer src ="https://code.jquery.com/jquery-3.6.0.min.js"></script>
