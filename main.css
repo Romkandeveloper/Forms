@@ -162,3 +162,28 @@ ul{
     margin-left: 15px;
 }
 
+/* select */
+.dropdown img{
+    width: 20px;
+}
+.btn{
+    border: 0;
+    color: #fff;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.btn img{
+    margin-right: 10px;
+}
+.dropdown-item{
+    cursor: pointer;
+}
+.dropdown-item img{
+    margin-right: 10px;
+}
+.languages{
+    width: 50px;
+    margin-right: 200px;
+}

@@ -8,6 +8,10 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap" rel="stylesheet">
+        <!-- JQ / Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Our styles -->
@@ -42,11 +46,29 @@
                             </li>
                         </ul>
                         <div class = "flex">
-                            <select class="form-select" id="inputGroupSelect01">
-                                <option selected>ru</option>
-                                <option value="">ua</option>
-                                <option value="">en</option>
-                            </select>
+
+                            <div class="dropdown languages">
+                                <button class="btn dropdown-toggle lang-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/ru.svg" alt = "">ru
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <span class="dropdown-item languages-item"><img src="images/ru.svg"  alt = "">ru</span>
+                                  <span class="dropdown-item languages-item"><img src="images/ru.svg"  alt = "">ua</span>
+                                  <span class="dropdown-item languages-item"><img src="images/ru.svg"  alt = "">ua</span>
+                                </div>
+                            </div>
+
+                            <script>
+                            // Lang-change script
+                                const langBtn = document.querySelector(".lang-btn");
+                                const languages = document.querySelectorAll(".languages-item");
+                                languages.forEach(item =>{
+                                    item.addEventListener("click",function(){
+                                        langBtn.innerHTML = item.innerHTML;
+                                    });
+                                });
+                            </script>
+
                             <ul class = "networks-list">
                                 <li class = "networks-list__item">
                                     <a href = "#"><img src = "images/Stroke.svg" alt=""></a>
@@ -471,5 +493,6 @@
                 </div>
             </div>
         </section>
+        <script src = "select.js"></script>
     </body>
 </html>
