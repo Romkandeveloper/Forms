@@ -9,36 +9,7 @@
     box-shadow: 0px 1px 0px #E5E9F2;
 }
 
-.slide-item{
-    color: #fff;
-    overflow: hidden;
-    border-radius: 8px;
-}
-.slide-item__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 560px;
-    position: relative;
-    z-index: 100000;
-}
-.slide-item__title{
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 116.29%;
-    margin-bottom: 25px;
-    color: #fff;
-}
-.slide-item__subtitle{
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 25px;
-}
-.slider{
-    position: relative;
-}
+
 .button{
     padding: 10px 50px;
     border-radius: 8px;
@@ -76,42 +47,7 @@
     margin-right: 0;
 }
 
-/*slider*/
-.slick-track{
-    display: flex;
-}
-.slick-list{
-    overflow: hidden;
-}
-.slick-dots{
-    position: absolute;
-    bottom: 50px;
-    padding: 0;
-    left: 50%;
-    transform: translateX(-60%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.slick-dots li{
-    margin: 0 7.5px;
-    list-style: none;
-}
-.slick-dots button{
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    font-size: 0;
-    width: 11px;
-    height: 11px;
-    background: #F1F1F1;
-    outline: none;
-}
-.slick-active button{
-    width: 13px;
-    height: 13px;
-}
-/* /slider */
+
 
 .header{
     padding: 20px;
@@ -145,6 +81,9 @@ ul{
 }
 .navigation__item:hover .navigation-drop{
     display: block;
+}
+.iframe-slider{
+    height: 600px;
 }
 .navigation-drop{
     z-index: 100000;
@@ -211,7 +150,7 @@ ul{
     color: #fff;
     margin-right: 200px;
     width: auto;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 .supheader__wrapper .form-select option{
     color : #000;
